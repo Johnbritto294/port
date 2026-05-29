@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Stackly — Premium job portal. Discover opportunities and build your career.">
+  <title>Stackly | Build Your Career</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="show-loader">
+  <div id="page-loader" class="page-loader">
+    <div class="loader-logo-wrap">
+            <img src="images/stacklylogo.webp" alt="Stackly" class="loader-logo-img" loading="eager">
+    </div>
+    <span class="loader-text">Loading</span>
+  </div>
+
+  <header id="header" class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+                <img src="images/stacklylogo.webp" alt="Stackly" class="logo-img" loading="eager">
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="features.html" class="nav-link">Features</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" style="display: none !important;"><i class="ph ph-moon"></i></button>
+        <a href="login.html" class="btn btn-nav-outline">Login</a>
+        <a href="signup.html" class="btn btn-nav-cta">Get Started</a>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open menu"><i class="ph ph-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <div id="mobile-nav" class="mobile-nav">
+    <div class="mobile-nav-top">
+      <a href="index.html" class="mobile-nav-logo">
+        <img src="images/stacklylogo.webp" alt="Stackly" class="logo-img" loading="eager">
+      </a>
+      <button id="close-menu-btn" class="close-btn" aria-label="Close menu"><i class="ph ph-x"></i></button>
+    </div>
+    <div class="mobile-nav-actions">
+      <a href="login.html" class="btn btn-nav-outline">Login</a>
+      <a href="signup.html" class="btn btn-nav-cta">Get Started</a>
+    </div>
+    <nav class="mobile-nav-links" aria-label="Mobile navigation">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="hero">
+    <div class="hero-slideshow parallax" data-speed="0.15" id="hero-slideshow" aria-hidden="true">
+      <div class="hero-slide active" data-slide="0">
+        <img src="images/hero-slide-1.webp" alt="" loading="eager"
+          srcset="images/hero-slide-1.webp 1920w" sizes="100vw">
+      </div>
+      <div class="hero-slide" data-slide="1">
+        <img src="images/hero-slide-2.webp" alt="" loading="lazy"
+          srcset="images/hero-slide-2.webp 1920w" sizes="100vw">
+      </div>
+      <div class="hero-slide" data-slide="2">
+        <img src="images/hero-slide-3.webp" alt="" loading="lazy"
+          srcset="images/hero-slide-3.webp 1920w" sizes="100vw">
+      </div>
+      <div class="hero-slide" data-slide="3">
+        <img src="images/hero-slide-4.webp" alt="" loading="lazy"
+          srcset="images/hero-slide-4.webp 1920w" sizes="100vw">
+      </div>
+      <div class="hero-slide" data-slide="4">
+        <img src="images/hero-slide-5.webp" alt="" loading="lazy"
+          srcset="images/hero-slide-5.webp 1920w" sizes="100vw">
+      </div>
+      <div class="hero-slide" data-slide="5">
+        <img src="images/hero-slide-6.webp" alt="" loading="lazy"
+          srcset="images/hero-slide-6.webp 1920w" sizes="100vw">
+      </div>
+    </div>
+    <div class="hero-gradient"></div>
+    <div class="hero-animated-gradient"></div>
+    <div class="hero-slide-dots" id="hero-slide-dots" role="tablist" aria-label="Hero background slides"></div>
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2 reverse"></div>
+    <div class="floating-shape shape-3"></div>
+    <div class="container hero-grid">
+      <div class="hero-content reveal fade-up">
+        <h1>Build Your Career.<br>Discover <span class="text-glow">Opportunities.</span></h1>
+        <p class="hero-sub">Connect with top employers worldwide. Your dream role is one search away.</p>
+        <div class="typing-wrap">
+          <span id="typed-text" data-words='["Remote Roles","Tech Careers","Creative Jobs","Leadership Paths"]'></span><span class="typing-cursor"></span>
+        </div>
+        <div class="hero-cta">
+          <a href="404.html" class="btn btn-primary">Browse All Jobs</a>
+          <a href="404.html" class="btn btn-primary">Post a Job</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal slide-right delay-200">
+        <div class="hero-right-glow" aria-hidden="true"></div>
+        <div class="hero-right-frame glass">
+          <div class="hero-right-slider" id="hero-right-slider">
+            <div class="hero-right-slide active" data-caption="Collaborate in modern offices">
+              <img src="images/hero-right-1.webp" alt="Team working in office" loading="eager" width="720" height="900">
+            </div>
+            <div class="hero-right-slide" data-caption="Professional workspace">
+              <img src="images/hero-right-2.webp" alt="Office desk with laptop" loading="lazy" width="720" height="900">
+            </div>
+            <div class="hero-right-slide" data-caption="Work from anywhere abroad">
+              <img src="images/hero-right-3.webp" alt="Digital nomad working on laptop at cafe abroad" loading="lazy" width="720" height="900">
+            </div>
+            <div class="hero-right-slide" data-caption="Global city opportunities">
+              <img src="images/hero-right-4.webp" alt="Urban skyline abroad" loading="lazy" width="720" height="900">
+            </div>
+            <div class="hero-right-slide" data-caption="Premium coworking spaces">
+              <img src="images/hero-right-5.webp" alt="Coworking office interior" loading="lazy" width="720" height="900">
+            </div>
+            <div class="hero-right-slide" data-caption="Travel & work worldwide">
+              <img src="images/hero-right-6.webp" alt="Business travel abroad" loading="lazy" width="720" height="900">
+            </div>
+          </div>
+        </div>
+        <div class="hero-right-badge" id="hero-right-badge">
+          <i class="ph ph-sparkle"></i>
+          <span id="hero-right-caption">Collaborate in modern offices</span>
+        </div>
+        <div class="hero-right-dots" id="hero-right-dots" role="tablist" aria-label="Hero image slides"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-jobs section">
+    <div class="container">
+      <div class="section-header text-center reveal fade-up">
+        <span class="section-badge">Featured</span>
+        <h2>Top <span class="text-gradient">Opportunities</span></h2>
+        <p>Hand-picked roles from industry-leading companies.</p>
+      </div>
+      <div class="grid-3">
+        <article class="job-card-premium glass reveal fade-up delay-100" data-job-id="1">
+          <div class="job-card-cover">
+            <img src="images/job-feature-1.webp" alt="Developer workspace" loading="lazy" width="640" height="360">
+            <button class="save-job-btn" data-id="1" aria-label="Save job"><i class="ph ph-bookmark-simple"></i></button>
+          </div>
+          <div class="job-card-body">
+            <div class="job-card-header">
+              <img src="images/job-company-1.webp" alt="TechFlow" class="job-card-logo" loading="lazy" width="52" height="52">
+            </div>
+            <h3>Senior Frontend Engineer</h3>
+            <p class="job-salary">$120k – $160k</p>
+            <div class="job-tags"><span>Remote</span><span>React</span><span>TypeScript</span></div>
+            <a href="404.html" class="btn btn-primary" style="width:100%">Apply Now</a>
+          </div>
+        </article>
+        <article class="job-card-premium glass reveal fade-up delay-200" data-job-id="2">
+          <div class="job-card-cover">
+            <img src="images/job-feature-2.webp" alt="Design studio" loading="lazy" width="640" height="360">
+            <button class="save-job-btn" data-id="2" aria-label="Save job"><i class="ph ph-bookmark-simple"></i></button>
+          </div>
+          <div class="job-card-body">
+            <div class="job-card-header">
+              <img src="images/job-company-2.webp" alt="DesignHub" class="job-card-logo" loading="lazy" width="52" height="52">
+            </div>
+            <h3>Product Designer</h3>
+            <p class="job-salary">$95k – $130k</p>
+            <div class="job-tags"><span>Hybrid</span><span>Figma</span><span>UI/UX</span></div>
+            <a href="404.html" class="btn btn-primary" style="width:100%">Apply Now</a>
+          </div>
+        </article>
+        <article class="job-card-premium glass reveal fade-up delay-300" data-job-id="3">
+          <div class="job-card-cover">
+            <img src="images/job-feature-3.webp" alt="Data analytics office" loading="lazy" width="640" height="360">
+            <button class="save-job-btn" data-id="3" aria-label="Save job"><i class="ph ph-bookmark-simple"></i></button>
+          </div>
+          <div class="job-card-body">
+            <div class="job-card-header">
+              <img src="images/job-company-3.webp" alt="DataCore" class="job-card-logo" loading="lazy" width="52" height="52">
+            </div>
+            <h3>Data Scientist</h3>
+            <p class="job-salary">$140k – $185k</p>
+            <div class="job-tags"><span>On-site</span><span>Python</span><span>ML</span></div>
+            <a href="404.html" class="btn btn-primary" style="width:100%">Apply Now</a>
+          </div>
+        </article>
+        <article class="job-card-premium glass reveal fade-up delay-100" data-job-id="4">
+          <div class="job-card-cover">
+            <img src="images/job-feature-4.webp" alt="Tech office environment" loading="lazy" width="640" height="360">
+            <button class="save-job-btn" data-id="4" aria-label="Save job"><i class="ph ph-bookmark-simple"></i></button>
+          </div>
+          <div class="job-card-body">
+            <div class="job-card-header">
+              <img src="images/job-company-4.webp" alt="CloudNine" class="job-card-logo" loading="lazy" width="52" height="52">
+            </div>
+            <h3>DevOps Engineer</h3>
+            <p class="job-salary">$110k – $150k</p>
+            <div class="job-tags"><span>Remote</span><span>AWS</span><span>K8s</span></div>
+            <a href="404.html" class="btn btn-primary" style="width:100%">Apply Now</a>
+          </div>
+        </article>
+        <article class="job-card-premium glass reveal fade-up delay-200" data-job-id="5">
+          <div class="job-card-cover">
+            <img src="images/job-feature-5.webp" alt="Finance professionals" loading="lazy" width="640" height="360">
+            <button class="save-job-btn" data-id="5" aria-label="Save job"><i class="ph ph-bookmark-simple"></i></button>
+          </div>
+          <div class="job-card-body">
+            <div class="job-card-header">
+              <img src="images/job-company-5.webp" alt="FinTech Pro" class="job-card-logo" loading="lazy" width="52" height="52">
+            </div>
+            <h3>Financial Analyst</h3>
+            <p class="job-salary">$85k – $115k</p>
+            <div class="job-tags"><span>Full-time</span><span>Excel</span><span>SQL</span></div>
+            <a href="404.html" class="btn btn-primary" style="width:100%">Apply Now</a>
+          </div>
+        </article>
+        <article class="job-card-premium glass reveal fade-up delay-300" data-job-id="6">
+          <div class="job-card-cover">
+            <img src="images/job-feature-6.webp" alt="Healthcare workplace" loading="lazy" width="640" height="360">
+            <button class="save-job-btn" data-id="6" aria-label="Save job"><i class="ph ph-bookmark-simple"></i></button>
+          </div>
+          <div class="job-card-body">
+            <div class="job-card-header">
+              <img src="images/job-company-6.webp" alt="HealthPlus" class="job-card-logo" loading="lazy" width="52" height="52">
+            </div>
+            <h3>Healthcare PM</h3>
+            <p class="job-salary">$100k – $135k</p>
+            <div class="job-tags"><span>Hybrid</span><span>Agile</span><span>HIPAA</span></div>
+            <a href="404.html" class="btn btn-primary" style="width:100%">Apply Now</a>
+          </div>
+        </article>
+      </div>
+      <div class="text-center" style="margin-top:3rem">
+        <a href="404.html" class="btn btn-outline">View All Jobs</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="companies-strip">
+    <div class="container text-center reveal fade-up">
+      <p class="companies-strip-title">Trusted by leading companies</p>
+    </div>
+    <div class="logo-track-wrap">
+      <div class="logo-track" id="logo-track">
+        <div class="logo-item" data-brand="google">
+          <img src="images/brand-google.webp" alt="" loading="lazy" width="200" height="64">
+          <span class="company-name">Google</span>
+        </div>
+        <div class="logo-item" data-brand="microsoft">
+          <img src="images/brand-microsoft.webp" alt="" loading="lazy" width="200" height="64">
+          <span class="company-name">Microsoft</span>
+        </div>
+        <div class="logo-item" data-brand="amazon">
+          <img src="images/brand-amazon.webp" alt="" loading="lazy" width="200" height="64">
+          <span class="company-name">Amazon</span>
+        </div>
+        <div class="logo-item" data-brand="meta">
+          <img src="images/brand-meta.webp" alt="" loading="lazy" width="200" height="64">
+          <span class="company-name">Meta</span>
+        </div>
+        <div class="logo-item" data-brand="apple">
+          <img src="images/brand-apple.webp" alt="" loading="lazy" width="200" height="64">
+          <span class="company-name">Apple</span>
+        </div>
+        <div class="logo-item" data-brand="netflix">
+          <img src="images/brand-netflix.webp" alt="" loading="lazy" width="200" height="64">
+          <span class="company-name">Netflix</span>
+        </div>
+        <div class="logo-item" data-brand="spotify">
+          <img src="images/brand-spotify.webp" alt="" loading="lazy" width="200" height="64">
+          <span class="company-name">Spotify</span>
+        </div>
+        <div class="logo-item" data-brand="stripe">
+          <img src="images/brand-stripe.webp" alt="" loading="lazy" width="200" height="64">
+          <span class="company-name">Stripe</span>
+        </div>
+        <div class="logo-item" data-brand="airbnb">
+          <img src="images/brand-airbnb.webp" alt="" loading="lazy" width="200" height="64">
+          <span class="company-name">Airbnb</span>
+        </div>
+        <div class="logo-item" data-brand="uber">
+          <img src="images/brand-uber.webp" alt="" loading="lazy" width="200" height="64">
+          <span class="company-name">Uber</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="section">
+    <div class="container">
+      <div class="section-header text-center reveal fade-up">
+        <span class="section-badge">Process</span>
+        <h2>How It <span class="text-gradient">Works</span></h2>
+        <p>Land your next role in four simple steps.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card glass reveal zoom-in delay-100">
+          <div class="step-card-bg">
+            <img src="images/step-bg-1.webp" alt="" loading="lazy" width="640" height="360">
+          </div>
+          <div class="step-card-content">
+            <span class="step-number">01</span>
+            <div class="step-icon"><i class="ph ph-user-plus"></i></div>
+            <h3>Create Profile</h3>
+            <p>Sign up and build your professional profile in minutes.</p>
+          </div>
+        </div>
+        <div class="step-card glass reveal zoom-in delay-200">
+          <div class="step-card-bg">
+            <img src="images/step-bg-2.webp" alt="" loading="lazy" width="640" height="360">
+          </div>
+          <div class="step-card-content">
+            <span class="step-number">02</span>
+            <div class="step-icon"><i class="ph ph-magnifying-glass"></i></div>
+            <h3>Search Jobs</h3>
+            <p>Filter by role, salary, location, and experience level.</p>
+          </div>
+        </div>
+        <div class="step-card glass reveal zoom-in delay-300">
+          <div class="step-card-bg">
+            <img src="images/step-bg-3.webp" alt="" loading="lazy" width="640" height="360">
+          </div>
+          <div class="step-card-content">
+            <span class="step-number">03</span>
+            <div class="step-icon"><i class="ph ph-paper-plane-tilt"></i></div>
+            <h3>Apply Instantly</h3>
+            <p>One-click applications with your saved resume.</p>
+          </div>
+        </div>
+        <div class="step-card glass reveal zoom-in delay-400">
+          <div class="step-card-bg">
+            <img src="images/step-bg-4.webp" alt="" loading="lazy" width="640" height="360">
+          </div>
+          <div class="step-card-content">
+            <span class="step-number">04</span>
+            <div class="step-icon"><i class="ph ph-trophy"></i></div>
+            <h3>Get Hired</h3>
+            <p>Track applications and receive offers from top companies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-section section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal fade-up">
+          <div class="counter-wrap"><span class="counter" data-target="10">0</span><span class="suffix">K+</span></div>
+          <p>Active Jobs</p>
+        </div>
+        <div class="stat-item reveal fade-up delay-200">
+          <div class="counter-wrap"><span class="counter" data-target="5">0</span><span class="suffix">K+</span></div>
+          <p>Companies</p>
+        </div>
+        <div class="stat-item reveal fade-up delay-400">
+          <div class="counter-wrap"><span class="counter" data-target="20">0</span><span class="suffix">K+</span></div>
+          <p>Happy Users</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories" class="section">
+    <div class="container">
+      <div class="section-header text-center reveal fade-up">
+        <span class="section-badge">Explore</span>
+        <h2>Job <span class="text-gradient">Categories</span></h2>
+        <p>Find roles tailored to your expertise.</p>
+      </div>
+      <div class="grid-3">
+        <a href="404.html" class="category-card reveal fade-up delay-100" data-tilt>
+          <img src="images/cat-tech.webp" alt="Technology" loading="lazy" srcset="images/cat-tech.webp 400w" sizes="(max-width:768px) 100vw, 33vw">
+          <div class="category-overlay"><h3>Technology</h3><span>2,400+ jobs</span></div>
+        </a>
+        <a href="404.html" class="category-card reveal fade-up delay-200" data-tilt>
+          <img src="images/cat-design.webp" alt="Design" loading="lazy" srcset="images/cat-design.webp 400w" sizes="(max-width:768px) 100vw, 33vw">
+          <div class="category-overlay"><h3>Design</h3><span>890+ jobs</span></div>
+        </a>
+        <a href="404.html" class="category-card reveal fade-up delay-300" data-tilt>
+          <img src="images/cat-marketing.webp" alt="Marketing" loading="lazy" srcset="images/cat-marketing.webp 400w" sizes="(max-width:768px) 100vw, 33vw">
+          <div class="category-overlay"><h3>Marketing</h3><span>1,200+ jobs</span></div>
+        </a>
+        <a href="404.html" class="category-card reveal fade-up delay-100" data-tilt>
+          <img src="images/cat-finance.webp" alt="Finance" loading="lazy" srcset="images/cat-finance.webp 400w" sizes="(max-width:768px) 100vw, 33vw">
+          <div class="category-overlay"><h3>Finance</h3><span>750+ jobs</span></div>
+        </a>
+        <a href="404.html" class="category-card reveal fade-up delay-200" data-tilt>
+          <img src="images/cat-health.webp" alt="Healthcare" loading="lazy" srcset="images/cat-health.webp 400w" sizes="(max-width:768px) 100vw, 33vw">
+          <div class="category-overlay"><h3>Healthcare</h3><span>620+ jobs</span></div>
+        </a>
+        <a href="404.html" class="category-card reveal fade-up delay-300" data-tilt>
+          <img src="images/cat-remote.webp" alt="Remote" loading="lazy" srcset="images/cat-remote.webp 400w" sizes="(max-width:768px) 100vw, 33vw">
+          <div class="category-overlay"><h3>Remote</h3><span>3,100+ jobs</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-section section">
+    <div class="container">
+      <div class="section-header text-center reveal fade-up">
+        <span class="section-badge">Testimonials</span>
+        <h2>What Our <span class="text-gradient">Users Say</span></h2>
+      </div>
+      <div class="testimonial-slider reveal zoom-in" id="testimonial-slider">
+        <div class="testimonial-track" id="testimonial-track">
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <p>"Stackly helped me land my dream role at a Fortune 500 company in under three weeks. The UI is stunning and the matching is spot-on."</p>
+              <div class="testimonial-author">
+                <img src="images/avatar-1.webp" alt="Sarah Chen" class="testimonial-author-img" loading="lazy" width="56" height="56">
+                <div class="author-info"><h4>Sarah Chen</h4><span>Software Engineer @ Google</span></div>
+                <div class="testimonial-author-divider"></div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <p>"As a recruiter, we've cut our hiring time in half. The premium experience reflects the quality of candidates we attract."</p>
+              <div class="testimonial-author">
+                <img src="images/avatar-2.webp" alt="Marcus Webb" class="testimonial-author-img" loading="lazy" width="56" height="56">
+                <div class="author-info"><h4>Marcus Webb</h4><span>Head of Talent @ Stripe</span></div>
+                <div class="testimonial-author-divider"></div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <p>"The glassmorphism design isn't just pretty — the platform is genuinely fast and intuitive. Best job portal I've used."</p>
+              <div class="testimonial-author">
+                <img src="images/avatar-3.webp" alt="Elena Rodriguez" class="testimonial-author-img" loading="lazy" width="56" height="56">
+                <div class="author-info"><h4>Elena Rodriguez</h4><span>Product Designer @ Airbnb</span></div>
+                <div class="testimonial-author-divider"></div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <p>"Saved jobs sync across devices perfectly. I applied to twelve roles and tracked everything from one dashboard."</p>
+              <div class="testimonial-author">
+                <img src="images/avatar-4.webp" alt="James Okonkwo" class="testimonial-author-img" loading="lazy" width="56" height="56">
+                <div class="author-info"><h4>James Okonkwo</h4><span>Data Analyst @ Amazon</span></div>
+                <div class="testimonial-author-divider"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-dots" id="slider-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-choose-section section">
+    <div class="container">
+      <div class="section-header text-center reveal fade-up">
+        <span class="section-badge">Why Stackly</span>
+        <h2>Why Choose <span class="text-gradient">Stackly</span></h2>
+        <p>Premium features that set us apart from other job platforms.</p>
+      </div>
+      <div class="grid-3">
+        <div class="why-card glass reveal fade-up delay-100">
+          <div class="why-icon"><i class="ph ph-shield-check"></i></div>
+          <h3>Verified Companies</h3>
+          <p>Every employer is manually verified. Apply with confidence knowing you're connecting with legitimate businesses.</p>
+        </div>
+        <div class="why-card glass reveal fade-up delay-200">
+          <div class="why-icon"><i class="ph ph-bolt"></i></div>
+          <h3>Instant Applications</h3>
+          <p>Apply to jobs with one click using your saved profile. No repetitive forms or cover letters needed.</p>
+        </div>
+        <div class="why-card glass reveal fade-up delay-300">
+          <div class="why-icon"><i class="ph ph-chart-line"></i></div>
+          <h3>Smart Matching</h3>
+          <p>Our AI matches you with roles based on skills, experience, and career goals — not just keywords.</p>
+        </div>
+        <div class="why-card glass reveal fade-up delay-100">
+          <div class="why-icon"><i class="ph ph-currency-circle-dollar"></i></div>
+          <h3>Salary Transparency</h3>
+          <p>All listings show salary ranges upfront. No more guessing games or surprise negotiations.</p>
+        </div>
+        <div class="why-card glass reveal fade-up delay-200">
+          <div class="why-icon"><i class="ph ph-clock-countdown"></i></div>
+          <h3>Fast Responses</h3>
+          <p>Employers respond within 48 hours on average. Most users hear back within one business day.</p>
+        </div>
+        <div class="why-card glass reveal fade-up delay-300">
+          <div class="why-icon"><i class="ph ph-globe"></i></div>
+          <h3>Global Opportunities</h3>
+          <p>Access jobs in 80+ countries with localization for currency, timezone, and visa sponsorship info.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="insights-section section">
+    <div class="container">
+      <div class="section-header text-center reveal fade-up">
+        <span class="section-badge">Insights</span>
+        <h2>Latest <span class="text-gradient">Career Tips</span></h2>
+        <p>Stay ahead with expert advice and market trends.</p>
+      </div>
+      <div class="grid-3">
+        <article class="insight-card glass reveal fade-up delay-100">
+          <div class="insight-thumb" style="padding:1.5rem;">
+            <svg width="100%" height="120" viewBox="0 0 400 120" style="display:block;margin:0 auto;">
+              <rect width="400" height="120" fill="url(#grad1)" rx="12"/>
+              <defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2563EB"/><stop offset="100%" stop-color="#06B6D4"/></linearGradient></defs>
+              <text x="50%" y="70" font-family="var(--font-display)" font-size="48" fill="white" text-anchor="middle" font-weight="700">INTERVIEW</text>
+            </svg>
+          </div>
+          <div class="insight-content" style="padding:1.5rem;">
+            <h3>Nail Your Next Interview</h3>
+            <p style="color:var(--muted);font-size:0.9rem;margin:0.75rem 0;">Master these 7 proven techniques that top candidates use to stand out.</p>
+            <a href="404.html" class="text-link" style="font-weight:600;font-size:0.9rem;">Read Guide <i class="ph ph-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="insight-card glass reveal fade-up delay-200">
+          <div class="insight-thumb" style="padding:1.5rem;">
+            <svg width="100%" height="120" viewBox="0 0 400 120" style="display:block;margin:0 auto;">
+              <rect width="400" height="120" fill="url(#grad2)" rx="12"/>
+              <defs><linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#22D3EE"/></linearGradient></defs>
+              <text x="50%" y="70" font-family="var(--font-display)" font-size="48" fill="white" text-anchor="middle" font-weight="700">SALARY</text>
+            </svg>
+          </div>
+          <div class="insight-content" style="padding:1.5rem;">
+            <h3>Maximize Your Salary</h3>
+            <p style="color:var(--muted);font-size:0.9rem;margin:0.75rem 0;">Data-driven tactics to negotiate 15-20% higher compensation packages.</p>
+            <a href="404.html" class="text-link" style="font-weight:600;font-size:0.9rem;">Read Guide <i class="ph ph-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="insight-card glass reveal fade-up delay-300">
+          <div class="insight-thumb" style="padding:1.5rem;">
+            <svg width="100%" height="120" viewBox="0 0 400 120" style="display:block;margin:0 auto;">
+              <rect width="400" height="120" fill="url(#grad3)" rx="12"/>
+              <defs><linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#06B6D4"/><stop offset="100%" stop-color="#2563EB"/></linearGradient></defs>
+              <text x="50%" y="70" font-family="var(--font-display)" font-size="48" fill="white" text-anchor="middle" font-weight="700">REMOTE</text>
+            </svg>
+          </div>
+          <div class="insight-content" style="padding:1.5rem;">
+            <h3>Master Remote Work</h3>
+            <p style="color:var(--muted);font-size:0.9rem;margin:0.75rem 0;">Productivity hacks from top remote professionals worldwide.</p>
+            <a href="404.html" class="text-link" style="font-weight:600;font-size:0.9rem;">Read Guide <i class="ph ph-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="text-center" style="margin-top:3rem">
+        <a href="404.html" class="btn btn-outline">View All Insights</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-bg parallax" data-speed="0.2">
+      <img src="images/cta-bg.webp" alt="" loading="lazy" srcset="images/cta-bg.webp 1920w" sizes="100vw">
+    </div>
+    <div class="cta-overlay"></div>
+    <div class="cta-waves">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" fill="rgba(248,250,252,0.15)">
+        <path d="M0,64 C320,120 480,0 720,48 C960,96 1200,24 1440,64 L1440,120 L0,120 Z"></path>
+      </svg>
+    </div>
+    <div class="container cta-content reveal fade-up">
+      <h2>Upload Your Resume Today</h2>
+      <p>Get matched with opportunities that fit your skills. Join 20,000+ professionals already on Stackly.</p>
+      <a href="404.html" class="btn btn-glow">Get Started Free</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+                      <img src="images/stacklylogo.webp" alt="Stackly" class="logo-img" loading="lazy">
+          </a>
+          <p>Premium job portal connecting talent with world-class opportunities.</p>
+        </div>
+         <div class="footer-col">
+           <h4>For Job Seekers</h4>
+           <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="features.html">Features</a></li>
+             <li><a href="services.html">Services</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="blog.html">Blog</a></li>
+             <li><a href="contact.html">Contact</a></li>
+           </ul>
+         </div>
+        <div class="footer-col">
+          <h4>For Employers</h4>
+          <ul>
+            <li><a href="404.html">Post a Job</a></li>
+            <li><a href="404.html">Pricing</a></li>
+            <li><a href="404.html">Recruiter Tools</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+<p style="color:#94A3B8;font-size:0.9rem">Weekly curated jobs in your inbox.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" placeholder="Your email" required aria-label="Email">
+            <button type="submit" class="btn btn-glow" style="padding:0.875rem 1.25rem">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="copyright">&copy; 2026 Stackly. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="404.html" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
+          <a href="404.html" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+          <a href="404.html" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        </div>
+        <span class="legal-links">Privacy · Terms · Cookies</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
